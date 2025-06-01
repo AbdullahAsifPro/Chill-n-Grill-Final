@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chill & Grill | Menu</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a class="logo" href="index.html">Chill & Grill</a>
+      <nav class="site-nav">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="deals.html">Deals</a>
+          <a href="reservation.html">Reservation</a>
+          <a href="about.html">About</a>
+          <a href="cart.html" class="cart-link">
+            <i class="fas fa-shopping-cart"></i> Cart
+            <span class="cart-count">0</span>
+          </a>
+          <i class="fas fa-shopping-cart"></i> Cart
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Cart Section -->
+  <main id="cart-section">
+    <div class="container">
+      <h2 class="subsection-title">Your Cart</h2>
+
+      <div class="cart-grid">
+        <!-- Dummy Cart Item 1 -->
+        <div class="cart-item">
+          <img src="images/tikka.jpeg" alt="Pepperoni Pizza">
+          <div class="cart-details">
+            <h3>Pepperoni Pizza</h3>
+            <p>Large, Extra Cheese</p>
+            <span class="price">Rs.800</span>
+            <div class="quantity-control">
+              <button>-</button>
+              <input type="text" value="1" />
+              <button>+</button>
+            </div>
+          </div>
+          <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+        </div>
+
+        <!-- Dummy Cart Item 2 -->
+        <div class="cart-item">
+          <img src="images/grilledburger.jpg" alt="Double Beef Burger">
+          <div class="cart-details">
+            <h3>Double Beef Burger</h3>
+            <p>Meal with Fries</p>
+            <span class="price">Rs.850</span>
+            <div class="quantity-control">
+              <button>-</button>
+              <input type="text" value="2" />
+              <button>+</button>
+            </div>
+          </div>
+          <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+        </div>
+
+        <!-- Dummy Cart Item 3 -->
+        <div class="cart-item">
+          <img src="images/coldcoofee.jpeg" alt="Cold Coffee">
+          <div class="cart-details">
+            <h3>Cold Coffee</h3>
+            <p>Blended with Ice</p>
+            <span class="price">Rs.300</span>
+            <div class="quantity-control">
+              <button>-</button>
+              <input type="text" value="1" />
+              <button>+</button>
+            </div>
+          </div>
+          <button class="remove-btn"><i class="fas fa-trash-alt"></i></button>
+        </div>
+      </div>
+
+
+
+      <!-- Cart Summary -->
+      <div class="cart-summary">
+        <h3>Total: <span id="cart-total">Rs.0.00</span></h3>
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-section footer-brand">
+          <h2>Chill & Grill</h2>
+          <p>Your neighborhood food heaven. Delicious meals, great vibes, and a place to chill with friends and family.
+          </p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/AbdullahAsif.edu"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/abdullahasif520/"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/ABDULLA95371507"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/abdullah-asif-2961b4223/"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Hours</h3>
+          <ul class="footer-links">
+            <li>Monday - Thursday: 11am - 10pm</li>
+            <li>Friday - Saturday: 11am - 11pm</li>
+            <li>Sunday: 10am - 9pm</li>
+            <li>Holidays: 12pm - 8pm</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <div class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> Bhola Cafe, UET</p>
+            <p><i class="fas fa-phone"></i> +92 304 333 1651</p>
+            <p><i class="fas fa-envelope"></i> abdullahasif1651@gmail.com </p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers and event invites</p>
+          <form>
+            <input type="email" placeholder="Your Email"
+              style="width: 100%; padding: 12px; margin: 10px 0; border-radius: 5px; border: none;">
+            <button class="btn" style="width: 100%;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Chill & Grill. All rights reserved. Designed with passion for great food.
+      </div>
+    </div>
+  </footer>
+  <script src="cart.js"></script>
+
+</body>
+
+</html>

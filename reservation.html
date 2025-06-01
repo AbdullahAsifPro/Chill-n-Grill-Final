@@ -1,0 +1,336 @@
+<!-- reservation.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chill & Grill | Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a class="logo" href="index.html">Chill & Grill</a>
+      <nav class="site-nav">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="deals.html">Deals</a>
+          <a href="reservation.html">Reservation</a>
+          <a href="about.html">About</a>
+          <a href="cart.html" class="cart-link">
+            <i class="fas fa-shopping-cart"></i> Cart
+            <span class="cart-count">0</span>
+          </a>
+          <i class="fas fa-shopping-cart"></i> Cart
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="reservation-hero">
+    <div class="hero-content">
+      <h1>Table Reservations</h1>
+      <p>Book your perfect dining experience</p>
+      <div class="hero-info">
+        <div class="info-card">
+          <i class="fas fa-phone"></i>
+          <div>
+            <h3>Need Help?</h3>
+            <p>+123 456 7890</p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fas fa-clock"></i>
+          <div>
+            <h3>Opening Hours</h3>
+            <p>Mon-Sun: 11am - 11pm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reservation Form Section -->
+  <section class="reservation-section">
+    <div class="reservation-container">
+      <div class="reservation-card">
+        <div class="form-header">
+          <h2>Book Your Table</h2>
+          <p>Fill in the details below to reserve your spot</p>
+        </div>
+
+        <form class="reservation-form">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required placeholder="John Smith">
+              <i class="fas fa-user"></i>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="john@example.com">
+              <i class="fas fa-envelope"></i>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" required placeholder="(123) 456-7890">
+              <i class="fas fa-phone"></i>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Reservation Date</label>
+              <input type="date" id="date" name="date" required>
+              <i class="fas fa-calendar-day"></i>
+            </div>
+
+            <div class="form-group">
+              <label for="time">Reservation Time</label>
+              <input type="time" id="time" name="time" required>
+              <i class="fas fa-clock"></i>
+            </div>
+
+            <div class="form-group">
+              <label for="guests">Number of Guests</label>
+              <div class="guest-selector">
+                <button type="button" class="guest-btn" id="decrease-guest">-</button>
+                <input type="number" id="guests" name="guests" min="1" max="20" value="2" readonly>
+                <button type="button" class="guest-btn" id="increase-guest">+</button>
+              </div>
+              <i class="fas fa-users"></i>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="special">Special Requests</label>
+              <textarea id="special" name="special" placeholder="Any special requirements or celebrations?"></textarea>
+              <i class="fas fa-edit"></i>
+            </div>
+          </div>
+
+          <div class="form-submit">
+            <button type="submit" class="submit-btn">
+              <i class="fas fa-calendar-check"></i> Confirm Reservation
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="reservation-info">
+        <div class="info-card">
+          <h3><i class="fas fa-info-circle"></i> Reservation Policy</h3>
+          <ul>
+            <li>Reservations can be made up to 3 months in advance</li>
+            <li>Large groups (8+ guests) require 24-hour notice</li>
+            <li>Please arrive 10 minutes before your reservation</li>
+            <li>Late arrivals beyond 15 minutes may lose their table</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3><i class="fas fa-question-circle"></i> Frequently Asked</h3>
+          <div class="faq-item">
+            <h4>Can I modify my reservation?</h4>
+            <p>Yes, changes can be made up to 2 hours before your booking time.</p>
+          </div>
+          <div class="faq-item">
+            <h4>Is outdoor seating available?</h4>
+            <p>Our patio is open seasonally and available by request.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Chill Spots Gallery (same as before) -->
+  <!-- Chill Spots Gallery -->
+  <section class="gallery-section">
+    <div class="container">
+      <h2 class="section-title">Our Chill Spots</h2>
+      <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem; font-size: 1.1rem;">
+        Discover the perfect atmosphere for your visit. From sunny patios to cozy booths, we have a spot for every mood.
+      </p>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1350&q=80"
+            alt="Restaurant Interior">
+          <div class="gallery-caption">Main Dining Area</div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1350&q=80"
+            alt="Cozy Booth">
+          <div class="gallery-caption">Cozy Booths</div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1350&q=80"
+            alt="Dining Area">
+          <div class="gallery-caption">Bar Area</div>
+        </div>
+        <div class="gallery-item">
+          <img
+            src="https://images.unsplash.com/photo-1544148103-0773bf10d330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1350&q=80"
+            alt="Outdoor Patio">
+          <div class="gallery-caption">Outdoor Patio</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <div class="container">
+      <h2 class="section-title">Find Us</h2>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.094072969434!2d74.3513662748727!3d31.580645844162927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39191bf3bdcf7321%3A0xfbd03579dd842622!2sBhola%20Canteen!5e1!3m2!1sen!2s!4v1748777549920!5m2!1sen!2s"
+          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="map-info">
+          <h3>Visit Our Restaurant</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Bhola Canteen</p>
+          <p><i class="fas fa-subway"></i> Nearest subway: DHA Food Street</p>
+          <p><i class="fas fa-parking"></i> Parking available </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-section footer-brand">
+          <h2>Chill & Grill</h2>
+          <p>Your neighborhood food heaven. Delicious meals, great vibes, and a place to chill with friends and family.
+          </p>
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Hours</h3>
+          <ul class="footer-links">
+            <li>Monday - Thursday: 11am - 10pm</li>
+            <li>Friday - Saturday: 11am - 11pm</li>
+            <li>Sunday: 10am - 9pm</li>
+            <li>Holidays: 12pm - 8pm</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <div class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> 123 Grill Street, Foodville</p>
+            <p><i class="fas fa-phone"></i> +123 456 789</p>
+            <p><i class="fas fa-envelope"></i> info@chillgrill.com</p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers and event invites</p>
+          <form>
+            <input type="email" placeholder="Your Email"
+              style="width: 100%; padding: 12px; margin: 10px 0; border-radius: 5px; border: none;">
+            <button class="btn" style="width: 100%;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Chill & Grill. All rights reserved. Designed with passion for great food.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Guest counter functionality
+    document.getElementById('increase-guest').addEventListener('click', function () {
+      const guestInput = document.getElementById('guests');
+      if (parseInt(guestInput.value) < 20) {
+        guestInput.value = parseInt(guestInput.value) + 1;
+      }
+    });
+
+    document.getElementById('decrease-guest').addEventListener('click', function () {
+      const guestInput = document.getElementById('guests');
+      if (parseInt(guestInput.value) > 1) {
+        guestInput.value = parseInt(guestInput.value) - 1;
+      }
+    });
+
+    // Set min date to today
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('date').min = today;
+  </script>
+  <script src="cart.js"></script>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-section footer-brand">
+          <h2>Chill & Grill</h2>
+          <p>Your neighborhood food heaven. Delicious meals, great vibes, and a place to chill with friends and family.
+          </p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/AbdullahAsif.edu"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/abdullahasif520/"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/ABDULLA95371507"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/abdullah-asif-2961b4223/"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Hours</h3>
+          <ul class="footer-links">
+            <li>Monday - Thursday: 11am - 10pm</li>
+            <li>Friday - Saturday: 11am - 11pm</li>
+            <li>Sunday: 10am - 9pm</li>
+            <li>Holidays: 12pm - 8pm</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <div class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> Bhola Cafe, UET</p>
+            <p><i class="fas fa-phone"></i> +92 304 333 1651</p>
+            <p><i class="fas fa-envelope"></i> abdullahasif1651@gmail.com </p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers and event invites</p>
+          <form>
+            <input type="email" placeholder="Your Email"
+              style="width: 100%; padding: 12px; margin: 10px 0; border-radius: 5px; border: none;">
+            <button class="btn" style="width: 100%;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Chill & Grill. All rights reserved. Designed with passion for great food.
+      </div>
+    </div>
+  </footer>
+  <script src="cart.js"></script>
+
+</body>
+
+</html>

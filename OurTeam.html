@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chill & Grill | Home</title>
+  <style>
+    /* Team Page Styles */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fefefe;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: #111;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .team-section {
+      padding: 3rem 1rem;
+      background-color: #f8f8f8;
+    }
+
+    .team-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .team-member {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .team-member:hover {
+      transform: translateY(-5px);
+    }
+
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      border: 3px solid #ff4d4d;
+    }
+
+    .team-member h3 {
+      margin-bottom: 0.5rem;
+      color: #222;
+    }
+
+    .team-member p {
+      font-size: 0.95rem;
+      color: #777;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <a class="logo" href="index.html">Chill & Grill</a>
+      <nav class="site-nav">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="deals.html">Deals</a>
+          <a href="reservation.html">Reservation</a>
+          <a href="about.html">About</a>
+          <a href="cart.html" class="cart-link">
+            <i class="fas fa-shopping-cart"></i> Cart
+            <span class="cart-count">0</span>
+          </a>
+
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet Our Team - Chill & Grill</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header>
+      <h1>Meet Our Team</h1>
+      <p class="subtitle">We are <strong>Team Nexus</strong> — the creators of Chill & Grill</p>
+    </header>
+
+    <!-- Team Section -->
+    <section class="team-section">
+      <div class="team-container">
+
+        <div class="team-member">
+          <img src="images/abdullah.jpeg" alt="Abdullah Asif">
+          <h3>Abdullah Asif</h3>
+          <p>Front-End Developer
+            Team Leader
+            Project Manager
+          </p>
+        </div>
+
+        <div class="team-member">
+          <img src="images/hafiz.jpeg" alt="Hafiz Abdullah">
+          <h3>Hafiz Abdullah</h3>
+          <p>html Expert</p>
+        </div>
+
+        <div class="team-member">
+          <img src="images/WhatsApp Image 2025-06-02 at 12.05.12 AM (1).jpeg" alt="Mahnoor Waseem">
+          <h3>Mahnoor Waseem</h3>
+          <p>Style Analyst</p>
+        </div>
+
+        <div class="team-member">
+          <img src="images/WhatsApp Image 2025-06-02 at 12.05.12 AM (1).jpeg" alt="Meerab Alvi">
+          <h3>Meerab Alvi</h3>
+          <p>Manager</p>
+        </div>
+
+      </div>
+    </section>
+
+  </body>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-section footer-brand">
+          <h2>Chill & Grill</h2>
+          <p>Your neighborhood food heaven. Delicious meals, great vibes, and a place to chill with friends and family.
+          </p>
+          <div class="social-links">
+            <a href="https://www.facebook.com/AbdullahAsif.edu"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/abdullahasif520/"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/ABDULLA95371507"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/abdullah-asif-2961b4223/"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Hours</h3>
+          <ul class="footer-links">
+            <li>Monday - Thursday: 11am - 10pm</li>
+            <li>Friday - Saturday: 11am - 11pm</li>
+            <li>Sunday: 10am - 9pm</li>
+            <li>Holidays: 12pm - 8pm</li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <div class="footer-contact">
+            <p><i class="fas fa-map-marker-alt"></i> Bhola Cafe, UET</p>
+            <p><i class="fas fa-phone"></i> +92 304 333 1651</p>
+            <p><i class="fas fa-envelope"></i> abdullahasif1651@gmail.com </p>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Subscribe to get special offers and event invites</p>
+          <form>
+            <input type="email" placeholder="Your Email"
+              style="width: 100%; padding: 12px; margin: 10px 0; border-radius: 5px; border: none;">
+            <button class="btn" style="width: 100%;">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Chill & Grill. All rights reserved. Designed with passion for great food.
+      </div>
+    </div>
+  </footer>
+  <script src="cart.js"></script>
+
+</body>
+
+</html>
